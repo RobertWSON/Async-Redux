@@ -4,7 +4,7 @@ import {fetchPosts} from '../actions'
 
 const LoadSubreddit = ({dispatch, event}) => (
   <form onSubmit={event => event.preventDefault()}>
-    <button onClick={() => dispatch(fetchPosts('newzealand'))}>
+    <button onClick={() => dispatch(fetchPosts(''))}>
       Fetch Posts
     </button>
     <input type ="text"/>
