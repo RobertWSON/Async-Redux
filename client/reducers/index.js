@@ -9,3 +9,7 @@ export default combineReducers({
   subreddits,
   waiting
 })
+
+
+ = combineReducers({})
+// This would produce the following state object 
