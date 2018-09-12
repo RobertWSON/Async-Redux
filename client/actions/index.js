@@ -25,7 +25,9 @@ export const showError = (errorMessage) => {
 }
 
 export function fetchPosts (subreddit) {
+  
   return (dispatch) => {
+    
     dispatch(requestPosts())
     return request
       .get(`/api/v1/reddit/subreddit/${subreddit}`)
@@ -34,6 +36,7 @@ export function fetchPosts (subreddit) {
       })
       .catch(err => {
         dispatch(showError(err.message))
+        
       })
   }
 }
